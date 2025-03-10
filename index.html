@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Официальный сайт MEILTTON. Портфолио, контакты и дополнительная информация.">
+    <meta name="keywords" content="MEILTTON, портфолио, театр, воркаут, фонк, дизайн, верстка">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>MEILTTON</title>
+</head>
+<body>
+    <header>
+        <div class="logo">MEILTTON</div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#info-container">Портфолио</a></li>
+                <li><a href="https://t.me/PAKETA_KOCMOC" target="_blank">Написать</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <a href="https://t.me/PAKETA_KOCMOC" title="Телеграмм" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://vk.com/meiltton" title="Вконтакте" target="_blank"><i class="fab fa-vk"></i></a>
+            <a href="https://www.tiktok.com/@meiltton?is_from_webapp=1&sender_device=pc" title="ТикТок" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </header>    
+    <div class="container">
+        <div class="photo-container">
+            <img src="model1.jpg" alt="Модель" class="model-photo">
+            <div class="album-links">
+                <h3>Альбом</h3>
+                <a href="#album-section" class="album-button">Перейти в альбом</a>
+            </div>
+            <div class="contact">
+                <h3>Контакты</h3>
+                <a href="https://t.me/PAKETA_KOCMOC" class="album-button" target="_blank">Написать в Телеграмм</a>
+                <br><br>
+                <a href="https://vk.com/meiltton" class="album-button" target="_blank">Написать в Вконтакте</a>
+            </div>
+        </div>
+        <div class="info-container" id="info-container">
+            <h2>Илья</h2>
+            <p><strong>Возраст:</strong> 15 лет</p>
+            <p><strong>Рост:</strong> 174 см</p>
+            <p><strong>Размеры:</strong> 83-60-90</p>
+            <p><strong>Вес:</strong> 64кг</p>
+            <p><strong>Цвет волос:</strong> Блонд</p>
+            <p><strong>Цвет глаз:</strong> Серо-синие</p>
+            <p><strong>Гражданство:</strong> РФ</p>
+            <p><strong>Город:</strong> Москва</p>
+            <p><strong>Опыт работы:</strong> 3 года занимаюсь в театральной студии.</p>
+            <p><strong>О себе:</strong> Я люблю играть в театре, занимаюсь воркаутом, пишу музыку в жанре фонк, частично занимаюсь дизайном, а так-же частично верстаю сайты</p>
+            <h2>Доп. образование</h2>
+            <p>Занимается в театральной студии Ирбис с 2024 года</p>
+            <p>Ранее занимался в театральной студии Бунин-луг 2023-2024</p>
+            <h2>Сценический опыт</h2>
+            <p>Участвовал в постановках школы «Ирбис»:</p>
+            <p>2024 - спектакль «Ярмарка тщеславия» Роли второго плана Кроули Старший, Осборон Старший</p>
+            <p>Участвовал в постановках школы «Бунин-луг»:</p>
+            <p>2024 - спектакль «Побег из библиотеки мистера Лимончелло» Роль второго плана Мигель Фернандес</p>
+            <p>2023 - спектакль «Поллианна» Главная роль Джимми Бин</p>
+            <h2>Дополнительная информация</h2>
+            <p>Учится в 9 классе, В соц-сетях использую псевдоним "MEILTTON" создал сайт <a href="https://community.meiltton.online/index.html">Meiltton Community</a> по оказаниме услуг в сфере IT, Хорошее телосложение, учится играть в баскетбол</p>
+        </div>
+    </div>
+    <div class="album-section" id="album-section">
+        <h2>Альбом</h2>
+        <div class="album-grid">
+            <div class="album-tile">
+                <img src="model1.jpg" alt="Фото 1" class="album-photo">    
+            </div>
+            <div class="album-tile">
+                <img src="model3.jpg" alt="Фото 2" class="album-photo">
+            </div>
+            <div class="album-tile">
+                <img src="model2.jpg" alt="Фото 3" class="album-photo">  
+            </div>
+            <div class="album-tile">
+                <img src="model5.jpg" alt="Фото 4" class="album-photo">   
+            </div>
+            <div class="album-tile">
+                <img src="model4.jpg" alt="Фото 5" class="album-photo">  
+            </div>
+        </div>
+    </div>
+    <button id="scrollToTop" title="Наверх">↑</button>
+    <script>
+        // Гамбургер-меню
+        document.getElementById('hamburger').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('nav-active');
+        });
+
+        // Кнопка "Наверх"
+        document.getElementById('scrollToTop').addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById('scrollToTop').style.display = 'block';
+            } else {
+                document.getElementById('scrollToTop').style.display = 'none';
+            }
+        };
+    </script>
+</body>
+</html>
